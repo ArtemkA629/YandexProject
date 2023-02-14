@@ -3,12 +3,12 @@ using UnityEngine;
 public class UntieBerry : MonoBehaviour
 {
     private SpringJoint2D _renderer;
-    private SwingBerry _renderer2;
+    private DistanceJoint2D _renderer2;
 
     private void Start()
     {
         _renderer = GetComponent<SpringJoint2D>();
-        _renderer2 = GetComponent<SwingBerry>();
+        _renderer2 = GetComponent<DistanceJoint2D>();
     }
 
     private void Update()
