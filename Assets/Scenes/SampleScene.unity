@@ -364,7 +364,7 @@ GameObject:
   - component: {fileID: 321933559}
   - component: {fileID: 321933560}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: Berry
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -506,6 +506,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e2ab629a526b1a4b92a8840ee13767c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _renderer: {fileID: 0}
 --- !u!1 &388436535
 GameObject:
   m_ObjectHideFlags: 0
