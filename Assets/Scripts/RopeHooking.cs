@@ -1,23 +1,23 @@
 using UnityEngine;
 
-public class RopeUnhooking : MonoBehaviour
+public class RopeHooking : MonoBehaviour
 {
     private DistanceJoint2D _distanceJoint2D;
     private Berry _berryComponent;
 
-    private void Start()
+    void Start()
     {
         _distanceJoint2D = GetComponent<DistanceJoint2D>();
         GameObject berry = _distanceJoint2D.attachedRigidbody.gameObject;
         _berryComponent = berry.GetComponent<Berry>();
     }
 
-    private void Update()
+    void OnTriggerEnter2D(Collider2D collider2D)
     {
-        if (Input.GetKey(KeyCode.Mouse0))
+        if (collider2D.TryGetComponent(out Berry _berryComponent) && _berryComponent.Hooked == false)
         {
-            _distanceJoint2D.enabled = false;
-            _berryComponent.Unhook();
+            _distanceJoint2D.enabled = true;
+            _berryComponent.Hook();     
         }
     }
 }
