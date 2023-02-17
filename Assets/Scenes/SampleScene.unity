@@ -217,7 +217,6 @@ GameObject:
   - component: {fileID: 156881090}
   - component: {fileID: 156881092}
   - component: {fileID: 156881095}
-  - component: {fileID: 156881091}
   - component: {fileID: 156881093}
   - component: {fileID: 156881094}
   m_Layer: 0
@@ -292,18 +291,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &156881091
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 156881088}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e2ab629a526b1a4b92a8840ee13767c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &156881092
 Rigidbody2D:
   serializedVersion: 4
@@ -380,7 +367,7 @@ DistanceJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0, y: 0.000000027177961}
   m_AutoConfigureDistance: 1
-  m_Distance: 0.97605133
+  m_Distance: 0.816
   m_MaxDistanceOnly: 0
 --- !u!1 &216244389
 GameObject:
@@ -710,7 +697,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 321933554}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.01, y: -1.69, z: 0}
+  m_LocalPosition: {x: 0, y: -1.53, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2120,7 +2107,6 @@ GameObject:
   - component: {fileID: 2043300290}
   - component: {fileID: 2043300289}
   - component: {fileID: 2043300288}
-  - component: {fileID: 2043300287}
   - component: {fileID: 2043300291}
   - component: {fileID: 2043300292}
   m_Layer: 0
@@ -2144,18 +2130,6 @@ Transform:
   m_Father: {fileID: 1432547418}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2043300287
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2043300285}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e2ab629a526b1a4b92a8840ee13767c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!232 &2043300288
 DistanceJoint2D:
   m_ObjectHideFlags: 0
