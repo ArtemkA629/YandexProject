@@ -38,7 +38,9 @@ public class Slide : MonoBehaviour
     {
         Vector2 alongSurface = Vector2.Perpendicular(_groundNormal);
 
-        _targetVelocity = alongSurface * _speed;
+        if (alongSurface.y == 0) alongSurface.x = 0;
+
+         _targetVelocity = alongSurface * _speed;
     }
 
     void FixedUpdate()
@@ -49,7 +51,8 @@ public class Slide : MonoBehaviour
         _grounded = false;
 
         Vector2 deltaPosition = _velocity * Time.deltaTime;
-        Vector2 moveAlongGround = new Vector2(_groundNormal.y, -_groundNormal.x);
+        if (_groundNormal.y > 0) _groundNormal.x *= -1;
+        Vector2 moveAlongGround = new Vector2(-_groundNormal.y, _groundNormal.x);
         Vector2 move = moveAlongGround * deltaPosition.x;
 
         Movement(move, false);
