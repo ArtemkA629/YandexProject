@@ -51,8 +51,7 @@ public class Slide : MonoBehaviour
         _grounded = false;
 
         Vector2 deltaPosition = _velocity * Time.deltaTime;
-        if (_groundNormal.y > 0) _groundNormal.x *= -1;
-        Vector2 moveAlongGround = new Vector2(-_groundNormal.y, _groundNormal.x);
+        Vector2 moveAlongGround = new Vector2(-_groundNormal.y, -_groundNormal.x);
         Vector2 move = moveAlongGround * deltaPosition.x;
 
         Movement(move, false);
